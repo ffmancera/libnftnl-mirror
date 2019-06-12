@@ -40,6 +40,7 @@ extern struct expr_ops expr_ops_socket;
 extern struct expr_ops expr_ops_tunnel;
 extern struct expr_ops expr_ops_osf;
 extern struct expr_ops expr_ops_xfrm;
+extern struct expr_ops expr_ops_synproxy;
 
 static struct expr_ops expr_ops_notrack = {
 	.name	= "notrack",
@@ -83,6 +84,7 @@ static struct expr_ops *expr_ops[] = {
 	&expr_ops_tunnel,
 	&expr_ops_osf,
 	&expr_ops_xfrm,
+	&expr_ops_synproxy,
 	NULL,
 };
 
